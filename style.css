@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+.delete-block{
+    display: none;
+}
+
+#conteiner{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Concert One', cursive;
+    color: rgb(248, 247, 247);
+    transition: background 0.7s;
+    position: relative;
+}
+
+.center{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    font-size: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+    padding: 0px 5px;
+    margin-bottom: 30px;
+}
+
+header > button{ 
+    padding: 7px 10px;  
+    font-size: 18px;
+    color: inherit;
+    background: #ffffff2a;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header > button:hover{ 
+    background: #ffffff54;
+}
+
+.workCollor{
+    background: #fc514b;
+}
+
+.shortBreakCollor{
+    background: #5ca552;
+}
+
+.longBreakCollor{
+    background: #60aa9a;    
+}
+
+#timer{
+    box-sizing: border-box;
+    background: #ffffff2a;
+    max-width: 500px;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    padding: 20px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.controlButton{
+    color: inherit;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+#timer > button{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    font-weight: bold;
+}
+
+#timer > button:active{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+
+}
+
+#time{
+    min-height: 150px;
+    font-size: 130px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-stretch:normal;
+}
+
+#setting{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.setting__block{
+    box-sizing: border-box;
+    max-width: 500px;
+    width: 100%;
+    color: rgb(36, 36, 36);
+    background: rgb(219, 219, 219);
+    border-radius: 7px;
+    padding: 5px;
+    margin: 65px auto;   
+}
+
+.setting__header{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(167, 167, 167);
+}
+
+.setting__header > button{
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: inherit;
+    transition: color 0.5s;
+}
+
+.setting__header > button:hover{
+    color: rgb(92, 92, 92);
+}
+
+.setting__block > h2{
+    margin: 20px 0 5px 0;
+}
+
+.setting__line{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.setting__input-number{
+    font: inherit;
+    text-align: center;
+    vertical-align: top;
+    width: 70px;
+    border-radius: 5px;
+    border: 3px solid rgb(92, 92, 92);
+}
+
+
+
+.setting__input-checkbox{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: 3px solid rgb(92, 92, 92);
+    background: url("image/circle.png");
+    background-repeat: no-repeat;
+    background-size: 20px;   
+    background-position: center left;
+    transition: 0.2s;
+}
+
+.setting__input-checkbox:checked{
+    background-position: center right;
+    background-color: #5ca552 ;
+
+}
+
+
+
+
