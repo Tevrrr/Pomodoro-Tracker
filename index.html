@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,56 +11,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <title>Pomodoro Tracker</title>
 </head>
+
 <body>
 
-<div id="conteiner" class="workCollor">
-    <div id="setting" class="delete-block">
-        <div class="setting__block">
-            <div class="setting__header">
-                <h1>Setting</h1>
-                <button onclick="closeSetting()">X</button> 
-            </div>
-            <h2>Time (minutes)</h2>
-            <div class="setting__line">
-                <p>Pomodoro</p>
-                <input class="setting__input-number" type="number" min="1" max="99" value="25">
-            </div>
-            <div class="setting__line">
-                <p>Short Break</p>
-                <input class="setting__input-number" type="number" min="1" max="99" value="5">
-            </div>
-            <div class="setting__line">
-                <p>Long Break</p>
-                <input class="setting__input-number" type="number" min="1" max="99" value="15">
-            </div>
-            <div class="setting__line">
-                <p>Auto start</p>
-                <input class="setting__input-checkbox" type="checkbox" checked>
+    <div id="conteiner" class="workCollor">
+        <div id="setting" class="delete-block">
+            <div class="setting__block">
+                <div class="setting__header">
+                    <h1>Setting</h1>
+                    <button onclick="closeSetting()">X</button>
+                </div>
+                <h2>Time (minutes)</h2>
+                <div class="setting__line">
+                    <p>Pomodoro</p>
+                    <input class="setting__input-number" type="number" min="1" max="99" value="25">
+                </div>
+                <div class="setting__line">
+                    <p>Short Break</p>
+                    <input class="setting__input-number" type="number" min="1" max="99" value="5">
+                </div>
+                <div class="setting__line">
+                    <p>Long Break</p>
+                    <input class="setting__input-number" type="number" min="1" max="99" value="15">
+                </div>
+                <div class="setting__line">
+                    <p>Auto start</p>
+                    <input class="setting__input-checkbox" type="checkbox" checked>
+                </div>
             </div>
         </div>
-    </div>  
 
 
 
-    <div class="center">
-        <header>
-            <h1>Pomodoro</h1>
-            <button onclick="openSetting()">Setting</button>
-        </header>
-        <div id="timer">
-            <div>
-                <button onclick="switchMode(0)" class="controlButton active">Pomodoro</button>                
-                <button onclick="switchMode(1)" class="controlButton">Short Break</button>
-                <button onclick="switchMode(2)" class="controlButton">Long Break</button>
+        <div class="center">
+            <header>
+                <h1>Pomodoro</h1>
+                <button onclick="openSetting()">Setting</button>
+            </header>
+            <div id="timer">
+                <div>
+                    <button onclick="switchMode(0)" class="controlButton active">Pomodoro</button>
+                    <button onclick="switchMode(1)" class="controlButton">Short Break</button>
+                    <button onclick="switchMode(2)" class="controlButton">Long Break</button>
+                </div>
+                <div id="time">25:00</div>
+                <button id="start">start</button>
             </div>
-            <div id="time">25:00</div>
-            <button id="start">start</button>
         </div>
+
     </div>
-  
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
